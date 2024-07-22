@@ -1,0 +1,75 @@
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    margin: 20px auto;
+    
+  }
+  
+  .title {
+    font-size: 34px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .addon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  .addon.selected {
+    border-color: #5d00f3;
+    background-color: #e6f0ff;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6127ff;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
+  
+  .backButton {
+    color: #747474;
+    background-color: transparent;
+  }
+  
+  .backButton:hover {
+    background-color: transparent;
+    color: #1d1d1d
+  }
+  
+  .headlabel{
+    display: flex;
+    gap: 20px;
+  }
+  .labels{
+    
+    font-size: 22px;
+    
+  }
+  .g{
+    font-size: 18px;
+    color: #00000083;
+  }

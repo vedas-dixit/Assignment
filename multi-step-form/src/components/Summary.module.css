@@ -1,0 +1,118 @@
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  height: 90%;
+  align-items: center;
+}
+
+.subcontainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.title {
+  width: 100%;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.planSummary {
+  background-color: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.planDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+.innDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.planTitle {
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.changeButton {
+  color: #02244b;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.planPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.addon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: rgba(22, 22, 22, 0.507);
+}
+
+.totalAmount {
+  color: #6127ff;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6127ff;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+.backButton {
+  color: #747474;
+  background-color: transparent;
+}
+
+.backButton:hover {
+  background-color: transparent;
+  color: #1d1d1d
+}
