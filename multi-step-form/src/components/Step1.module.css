@@ -89,11 +89,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     transform: translateY(9%);
-    
+    background-color: #ffffff;
   }
 
   .button {
