@@ -1,14 +1,16 @@
-'use client';
+"use client"
 import React, { useState } from 'react';
 import Step1 from '../components/Step1';
 import Step2 from '../components/Step2';
 import Step3 from '../components/Step3';
 import Summary from '../components/Summary';
+import ThankYou from '../components/thankyou';
 import styles from './page.module.css';
 
 const Home = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({});
+  const [confirmed, setConfirmed] = useState(false);
 
   const nextStep = (data) => {
     setFormData({ ...formData, ...data });
@@ -21,6 +23,7 @@ const Home = () => {
 
   const confirm = () => {
     console.log('Order confirmed:', formData);
+    setConfirmed(true);
   };
 
   const steps = ['Your Info', 'Select Plan', 'Add-ons', 'Summary'];
@@ -39,10 +42,16 @@ const Home = () => {
         ))}
       </div>
       <div className={styles.content}>
-        {step === 1 && <Step1 data={formData} next={nextStep} />}
-        {step === 2 && <Step2 data={formData} next={nextStep} back={prevStep} />}
-        {step === 3 && <Step3 data={formData} next={nextStep} back={prevStep} />}
-        {step === 4 && <Summary data={formData} back={prevStep} confirm={confirm} />}
+        {confirmed ? (
+          <ThankYou />
+        ) : (
+          <>
+            {step === 1 && <Step1 data={formData} next={nextStep} />}
+            {step === 2 && <Step2 data={formData} next={nextStep} back={prevStep} />}
+            {step === 3 && <Step3 data={formData} next={nextStep} back={prevStep} />}
+            {step === 4 && <Summary data={formData} back={prevStep} confirm={confirm} />}
+          </>
+        )}
       </div>
     </div>
   );
