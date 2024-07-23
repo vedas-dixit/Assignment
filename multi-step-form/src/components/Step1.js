@@ -32,6 +32,7 @@ const Step1 = ({ data, next }) => {
         onBlur={formik.handleBlur}
         value={formik.values.name}
         className={styles.input}
+        placeholder='e.g. Stephan King'
       />
       {formik.touched.name && formik.errors.name ? <div className={styles.error}>{formik.errors.name}</div> : null}
 
@@ -43,6 +44,7 @@ const Step1 = ({ data, next }) => {
         onBlur={formik.handleBlur}
         value={formik.values.email}
         className={styles.input}
+        placeholder='e.g. stephanking123@gmail.com'
       />
       {formik.touched.email && formik.errors.email ? <div className={styles.error}>{formik.errors.email}</div> : null}
 
@@ -54,6 +56,7 @@ const Step1 = ({ data, next }) => {
         onBlur={formik.handleBlur}
         value={formik.values.phone}
         className={styles.input}
+        placeholder='e.g. +1 2345 678 987'
       />
       {formik.touched.phone && formik.errors.phone ? <div className={styles.error}>{formik.errors.phone}</div> : null}
       <g className={styles.buttoncontainer}>
