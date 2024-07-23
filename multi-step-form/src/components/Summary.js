@@ -18,14 +18,14 @@ const Summary = ({ data, back, confirm }) => {
   const addonPrices = {
     'Online service': data.billing === 'Monthly' ? 1 : 10,
     'Larger storage': data.billing === 'Monthly' ? 2 : 20,
-    'Customizable Profile': data.billing === 'Monthly' ? 2 : 20,
+    'Customizable profile': data.billing === 'Monthly' ? 2 : 20,
   };
 
   const total =
     planPrice +
     (data.addons.includes('Online service') ? addonPrices['Online service'] : 0) +
     (data.addons.includes('Larger storage') ? addonPrices['Larger storage'] : 0) +
-    (data.addons.includes('Customizable Profile') ? addonPrices['Customizable Profile'] : 0);
+    (data.addons.includes('Customizable profile') ? addonPrices['Customizable profile'] : 0);
 
   return (
     <div className={styles.container}>
@@ -55,10 +55,10 @@ const Summary = ({ data, back, confirm }) => {
               <p>+${addonPrices['Larger storage']}/{data.billing === 'Monthly' ? 'mo' : 'yr'}</p>
             </div>
           )}
-          {data.addons.includes('Customizable Profile') && (
+          {data.addons.includes('Customizable profile') && (
             <div className={styles.addon}>
-              <p>Customizable Profile</p>
-              <p>+${addonPrices['Customizable Profile']}/{data.billing === 'Monthly' ? 'mo' : 'yr'}</p>
+              <p>Customizable profile</p>
+              <p>+${addonPrices['Customizable profile']}/{data.billing === 'Monthly' ? 'mo' : 'yr'}</p>
             </div>
           )}
         </div>

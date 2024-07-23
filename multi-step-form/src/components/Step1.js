@@ -57,7 +57,7 @@ const Step1 = ({ data, next }) => {
       />
       {formik.touched.phone && formik.errors.phone ? <div className={styles.error}>{formik.errors.phone}</div> : null}
       <g className={styles.buttoncontainer}>
-      <button type="submit" className={styles.button}>Next Step</button>
+        <button type="submit" className={styles.button}>Next Step</button>
       </g>
     </form>
   );

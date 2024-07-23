@@ -57,6 +57,7 @@
   cursor: pointer;
   font-size: 20px;
   font-weight: 400;
+  transform: translateY(-12%);
 }
 
 .button:hover {
@@ -77,4 +78,26 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+  .form {
+    height: auto;
+  }
+
+  .buttoncontainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(9%);
+    
+  }
+
+  .button {
+   
+    margin: 10px;
+  }
 }

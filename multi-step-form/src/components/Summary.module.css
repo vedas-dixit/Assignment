@@ -116,3 +116,22 @@
   background-color: transparent;
   color: #1d1d1d
 }
+
+
+@media (max-width: 700px) {
+  .buttonContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+    
+  }
+
+  .button {
+    margin: 10px;
+  }
+}

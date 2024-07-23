@@ -4,14 +4,18 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  border-radius: 10px;
   background-color: #fff;
   min-height: 80vh;
+  overflow: hidden;
 }
 
 .sidebar {
   width: 25%;
   padding: 20px;
-  background-color: #4831d4;
+  background-image: url('/images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
   margin-right: 20px;
   color: white;
@@ -70,24 +74,34 @@
 }
 
 /* Media query for responsiveness */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
+
   .sidebar {
-    width: 100%;
+    width: 80vw;
     margin-right: 0;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    padding: 20px;
   }
+
   .content {
+    height: 80vh;
     width: 100%;
   }
+
   .step {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .step-text {
+    display: none;
   }
 }
+
