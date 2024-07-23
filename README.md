@@ -47,5 +47,6 @@ Feel free to reach out to me via email or phone if you have any questions or nee
 
 Email: vedasdixit006@gmail.com
 Phone: +91 9521408899
-LinkedIn: [linkedin.com/in/vedas-dixit](https://www.linkedin.com/in/vedas-dixit/)
+LinkedIn: [linkedin.com/in/vedas-dixit](https://www.linkedin.com/in/vedas-dixit-3465b5239/)
+Portfolio: [linkedin.com/in/vedas-dixit](https://vedas-dixit-portfolio.vercel.app/)
 
