@@ -21,6 +21,8 @@
   font-size: 34px;
   margin-bottom: 10px;
   text-align: center;
+  color: #003468;
+  font-family: 'Ubuntu';
 }
 
 .subtitle {
@@ -28,6 +30,7 @@
   margin-bottom: 20px;
   text-align: center;
   color: #888;
+  
 }
 
 .planOptions {
@@ -45,6 +48,8 @@
   border-radius: 5px;
   cursor: pointer;
   width: 30%;
+  font-family: 'Ubuntu';
+  color: #003468;
 }
 
 .planOption.selected {
@@ -60,6 +65,7 @@
 .planOption h3 {
   margin: 10px 0 5px;
   font-size: 16px;
+  
 }
 
 .planOption p {
@@ -107,6 +113,7 @@
   cursor: pointer;
   font-size: 20px;
   font-weight: 400;
+  
 }
 
 .button:hover {

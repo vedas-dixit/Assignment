@@ -1,3 +1,4 @@
+
 .form {
   border-radius: 10px;
   padding: 20px;
@@ -19,6 +20,9 @@
   font-size: 34px;
   margin: 0px;
   text-align: center;
+  color: #003468;
+    font-family: 'Ubuntu';
+    font-size: 38px;
 }
 
 .label {
@@ -34,6 +38,8 @@
   border: 1px solid #ccc;
   margin-bottom: 20px;
   font-size: 18px;
+  font-family: 'Ubuntu';
+  color: #003468;
 }
 
 .error {
@@ -58,6 +64,7 @@
   font-size: 20px;
   font-weight: 400;
   transform: translateY(-12%);
+  
 }
 
 .button:hover {

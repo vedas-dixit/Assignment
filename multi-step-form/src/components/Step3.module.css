@@ -13,9 +13,10 @@
     height: 100%;
   }
   .title {
-    font-size: 34px;
     margin-bottom: 20px;
-    
+    color: #003468;
+    font-family: 'Ubuntu';
+    font-size: 38px;
   }
   
   .addon {
@@ -27,6 +28,8 @@
     margin-bottom: 10px;
     cursor: pointer;
     align-items: center;
+    font-family: 'Ubuntu';
+  color: #003468;
   }
   
   .addon.selected {

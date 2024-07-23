@@ -32,21 +32,21 @@ const Step2 = ({ data, next, back }) => {
       </div>
       <div className={styles.planOptions}>
         <div className={`${styles.planOption} ${plan === 'Arcade' ? styles.selected : ''}`} onClick={() => setPlan('Arcade')}>
-          <img src='arc.svg' alt="Arcade" />
+          <img src='/images/arc.svg' alt="Arcade" />
           <div>
             <h3>Arcade</h3>
             <p>${getPrice('Arcade')}/{billing === 'Monthly' ? 'mo' : 'yr'}</p>
           </div>
         </div>
         <div className={`${styles.planOption} ${plan === 'Advanced' ? styles.selected : ''}`} onClick={() => setPlan('Advanced')}>
-          <img src='adv.svg' alt="Advanced" />
+          <img src='/images/adv.svg' alt="Advanced" />
           <div>
             <h3>Advanced</h3>
             <p>${getPrice('Advanced')}/{billing === 'Monthly' ? 'mo' : 'yr'}</p>
           </div>
         </div>
         <div className={`${styles.planOption} ${plan === 'Pro' ? styles.selected : ''}`} onClick={() => setPlan('Pro')}>
-          <img src='pro.svg' alt="Pro" />
+          <img src='/images/pro.svg' alt="Pro" />
           <div>
             <h3>Pro</h3>
             <p>${getPrice('Pro')}/{billing === 'Monthly' ? 'mo' : 'yr'}</p>
